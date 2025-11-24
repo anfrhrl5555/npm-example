@@ -1,12 +1,10 @@
 {
   "name": "sample-vite-app",
   "version": "1.0.0",
-  "description": "Sample frontend app with Vite",
+  "description": "Sample frontend app with Vite (build-only mode)",
   "scripts": {
-    "dev": "vite",                   
-    "build": "vite build --mode production", 
-    "build:dev": "vite build --mode development",
-    "serve": "vite preview"           
+    "build": "vite build --mode production",
+    "build:dev": "vite build --mode development"
   },
   "dependencies": {},
   "devDependencies": {
