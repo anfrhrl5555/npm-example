@@ -5,10 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.json({
-    env: process.env.NODE_ENV,
-    message: "Hello Node.js 18!"
-  });
+  res.send(`
+    <h1>Hello Node.js 18!</h1>
+    <p>NODE_ENV: ${process.env.NODE_ENV}</p>
+  `);
 });
 
 app.listen(PORT, () => {
