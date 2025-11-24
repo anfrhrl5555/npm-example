@@ -1,0 +1,26 @@
+{
+  "name": "sample-node-app",
+  "version": "1.0.0",
+  "description": "Sample Node.js app with Vite build",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& nodemon src/index.js",
+    "prod": "set NODE_ENV=production&& node src/index.js",
+
+    "build": "vite build --mode production",
+    "build:dev": "vite build --mode development",
+
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
